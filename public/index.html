@@ -4,13 +4,76 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Download MyCUETBus</title>
+    <script
+      src="https://kit.fontawesome.com/112eea2fba.js"
+      crossorigin="anonymous"
+    ></script>
     <style>
       body {
         font-family: Arial, sans-serif;
-        text-align: center;
-        padding: 50px;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background-color: #f9f9f9;
       }
-      .button {
+
+      .header {
+        width: 100%;
+        padding: 20px 0;
+        background: linear-gradient(to right, #0d41e1, #07c8f9);
+        text-align: center;
+        color: white;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      }
+      .header img {
+        width: 100px;
+        height: 95px;
+        border-radius: 15px;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+        margin-bottom: 10px;
+        animation: fadeIn 1s ease;
+      }
+      .header h1 {
+        margin: 5px 0;
+        font-size: 28px;
+        font-weight: bold;
+        letter-spacing: 1px;
+      }
+      .header p {
+        margin: 0;
+        font-size: 16px;
+        font-style: italic;
+      }
+
+      .branding {
+        margin: 20px 0;
+        text-align: center;
+      }
+      .branding img {
+        width: 130px;
+        height: auto;
+        margin-bottom: 15px;
+        border-radius: 12px;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+      }
+      .branding h2 {
+        font-size: 24px;
+        margin: 0;
+        color: #333;
+      }
+
+      .download {
+        margin: 10px 0;
+        text-align: center;
+      }
+      .download p {
+        font-size: 18px;
+        color: #555;
+        margin-bottom: 20px;
+      }
+      .download .button {
         background-color: #4caf50;
         color: white;
         padding: 15px 20px;
@@ -18,19 +81,86 @@
         text-decoration: none;
         font-size: 20px;
         border-radius: 5px;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        transition: all 0.3s ease;
       }
-      .button:hover {
+      .download .button:hover {
         background-color: #45a049;
+        transform: scale(1.05);
+      }
+
+      .footer {
+        width: 100%;
+        padding: 10px 0;
+        color: black;
+        text-align: center;
+        margin-top: 20px;
+      }
+      .footer a {
+        color: #023bf5;
+        text-decoration: none;
+      }
+      .social-icons {
+        margin-top: 10px;
+      }
+      .social-icons a {
+        margin: 0 10px;
+        font-size: 36px;
+        color: #0d41e1;
+        transition: color 0.3s ease;
+      }
+      .social-icons a:hover {
+        color: #07c8f9;
+      }
+
+      @keyframes fadeIn {
+        from {
+          opacity: 0;
+          transform: scale(0.9);
+        }
+        to {
+          opacity: 1;
+          transform: scale(1);
+        }
       }
     </style>
   </head>
   <body>
-    <h1>Download the Latest Version of MyCUETBus</h1>
-    <p>Click the button below to download the latest APK:</p>
-    <a
-      class="button"
-      href="https://github.com/yourusername/MyCUETBus/releases/download/v1.0.0/MyCUETBus.apk"
-      >Download APK</a
-    >
+    <div class="header">
+      <img src="KrakenByte2.png" alt="KrakenByte Logo" />
+      <h1>KrakenByte Technologies</h1>
+      <p>Innovating for a Better Tomorrow</p>
+    </div>
+
+    <div class="branding">
+      <img src="icon.png" alt="MyCUETBus Logo" />
+      <h2>Download MyCUETBus App</h2>
+    </div>
+
+    <div class="download">
+      <p>Click the button below to download the latest APK:</p>
+      <a
+        class="button"
+        href="https://github.com/RifatHossaiN47/MyCUETBus/releases/download/v1.0.0/MyCUETBusV1.apk"
+        >Download APK</a
+      >
+    </div>
+
+    <div class="footer">
+      <p>Connect with me on social media:</p>
+      <div class="social-icons">
+        <a href="https://www.facebook.com/rifathossain4777/" target="_blank"
+          ><i class="fa-brands fa-facebook"></i>
+        </a>
+        <a href="https://www.linkedin.com/in/rifathossain47/" target="_blank"
+          ><i class="fab fa-linkedin"></i>
+        </a>
+      </div>
+      <p>
+        &copy; 2025 KrakenByte Technologies. All rights reserved.
+        <br />
+        Visit us at <a href="https://krakenbyte.com">krakenbyte.com</a>
+      </p>
+    </div>
   </body>
 </html>
