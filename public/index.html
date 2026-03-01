@@ -426,6 +426,124 @@
         }
       }
 
+      /* Developer Section */
+      .developer-section {
+        background: white;
+        padding: 50px 40px;
+        border-radius: var(--border-radius);
+        box-shadow: var(--shadow-card);
+        margin-bottom: 60px;
+        border: 1px solid rgba(0, 0, 0, 0.05);
+        display: flex;
+        align-items: flex-start;
+        gap: 30px;
+        flex-wrap: wrap;
+      }
+
+      .developer-section-left {
+        display: flex;
+        align-items: center;
+        gap: 20px;
+        flex: 1;
+        min-width: 260px;
+      }
+
+      .developer-avatar {
+        width: 72px;
+        height: 72px;
+        border-radius: 50%;
+        background: var(--primary-gradient);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 2rem;
+        color: white;
+        flex-shrink: 0;
+        box-shadow: var(--shadow-card);
+      }
+
+      .developer-meta h3 {
+        font-size: 1.2rem;
+        font-weight: 700;
+        color: var(--text-primary);
+        margin-bottom: 4px;
+      }
+
+      .developer-meta .developer-role {
+        font-size: 0.9rem;
+        color: var(--text-secondary);
+        font-weight: 500;
+        display: flex;
+        align-items: center;
+        gap: 6px;
+      }
+
+      .developer-divider {
+        width: 1px;
+        background: rgba(0, 0, 0, 0.08);
+        align-self: stretch;
+        min-height: 60px;
+      }
+
+      .developer-support {
+        flex: 2;
+        min-width: 260px;
+      }
+
+      .developer-support h4 {
+        font-size: 1rem;
+        font-weight: 600;
+        color: var(--text-primary);
+        margin-bottom: 8px;
+        display: flex;
+        align-items: center;
+        gap: 8px;
+      }
+
+      .developer-support p {
+        font-size: 0.95rem;
+        color: var(--text-secondary);
+        line-height: 1.7;
+        margin-bottom: 14px;
+      }
+
+      .support-email-btn {
+        display: inline-flex;
+        align-items: center;
+        gap: 8px;
+        background: #f0f9ff;
+        color: #0369a1;
+        padding: 10px 18px;
+        border-radius: var(--border-radius-small);
+        text-decoration: none;
+        font-size: 0.9rem;
+        font-weight: 600;
+        border: 1px solid #bae6fd;
+        transition: all 0.3s ease;
+      }
+
+      .support-email-btn:hover {
+        background: #0369a1;
+        color: white;
+        transform: translateY(-1px);
+        box-shadow: 0 4px 12px rgba(3, 105, 161, 0.25);
+      }
+
+      @media (max-width: 768px) {
+        .developer-section {
+          padding: 30px 20px;
+          margin: 0 16px 40px;
+          flex-direction: column;
+          gap: 20px;
+        }
+
+        .developer-divider {
+          width: 100%;
+          height: 1px;
+          min-height: unset;
+        }
+      }
+
       /* Accessibility improvements */
       @media (prefers-reduced-motion: reduce) {
         *,
@@ -508,7 +626,7 @@
           </p>
 
           <a
-            href="https://github.com/RifatHossaiN47/MyCUETBus/releases/download/v4.0.0/MyCUETBusV4.apk"
+            href="https://github.com/RifatHossaiN47/MyCUETBus/releases/download/v5.0.0/MyCUETBusV5.apk"
             class="download-button"
             id="downloadBtn"
             download
@@ -525,9 +643,45 @@
 
           <div class="download-info">
             <p>
-              <strong>Version:</strong> 4.0.0 | <strong>Size:</strong> ~120 MB |
+              <strong>Version:</strong> 5.0.0 | <strong>Size:</strong> ~112 MB |
               <strong>Requires:</strong> Android 6.0+
             </p>
+          </div>
+        </section>
+        <!-- Developer Info Section -->
+        <section class="developer-section" aria-label="Developer Information">
+          <div class="developer-section-left">
+            <div class="developer-avatar" aria-hidden="true">
+              <i class="fas fa-code"></i>
+            </div>
+            <div class="developer-meta">
+              <h3>Md. Rifat Hossain</h3>
+              <span class="developer-role">
+                <i class="fas fa-laptop-code"></i>
+                Developer &amp; Maintainer — MyCUETBus
+              </span>
+            </div>
+          </div>
+
+          <div class="developer-divider"></div>
+
+          <div class="developer-support">
+            <h4>
+              <i class="fas fa-headset"></i> Support &amp; Issue Reporting
+            </h4>
+            <p>
+              Encountered a bug, error, or any account-related issue? Feel free
+              to reach out directly — I'll look into it and resolve it as soon
+              as possible, Insha'Allah.
+            </p>
+            <a
+              href="mailto:rifat8851@gmail.com"
+              class="support-email-btn"
+              aria-label="Send support email to Md. Rifat Hossain"
+            >
+              <i class="fas fa-envelope"></i>
+              rifat8851@gmail.com
+            </a>
           </div>
         </section>
       </div>
@@ -598,7 +752,7 @@
         if (typeof gtag !== "undefined") {
           gtag("event", "download", {
             event_category: "app",
-            event_label: "MyCUETBus APK v4.0.0",
+            event_label: "MyCUETBus APK v5.0.0",
           });
         }
       }
